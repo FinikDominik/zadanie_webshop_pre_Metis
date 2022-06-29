@@ -5,57 +5,270 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Eshop.css">
+    
     
     <title>Fs Liptov - projekt</title>
 </head>
 <body>
-         <!-- <iframe
-          src="https://www.youtube.com/embed/vpcZk7VXEP8?start=48&autoplay=1&loop=1&mute=1"
-          title="YouTube video"
-          allowfullscreen
-        ></iframe>  -->
 
-        <video id="covervideo" src="zem spieva fs liptov_.mp4" muted loop autoplay ></video>
+    <video id="covervideo" class="" src="Cover video.mp4" muted loop autoplay ></video>
 
-    
-
-
+    <div id="StopClikOnMenu"></div>
     <Header>
-        <div id="loga" > 
-            <img id="logoliptov" class="img-fluid " src="logo fs liptov.png" alt="logoFSLiptov">
-            <!-- <img id="logoliptacik" class="img-fluid " src="logo liptacik.png" alt="logoFSLiptacik">
-            <img id="logoSZUS" class="img-fluid " src="logo zus.png" alt="logosZUS"> -->
+        <div id="loga"> 
+            <img id="logoliptov" class="img-fluid" src="Logo 75.png" alt="logoFSLiptov">
+            <!-- <img id="logoliptacik" class="img-fluid " src="logo liptacik.png" alt="logoFSLiptacik"> -->
+            <!-- <img id="logoSZUS" class="img-fluid " src="logo zus.png" alt="logosZUS"> -->
 
         </div>
         
-
-        <nav>
-            <a href="?">O nás</a>
-            <a href="?">Repertoár</a>
-            <a href="?">O členoch</a>
-            <a href="?">Produkcia</a>
-            <a href="?">Ostatné/webshop</a>
+        
+        <nav id="NavMenu" class="">
+            <div>
+                <div class="ornamentdiv" id="ornamentonBtn">
+                    <img id="ornament1" src="img/Img circle/Ornamnet priehladný.png" alt="">
+                    <div>
+                        <a class="navAelement" id="onasbtn" href="#">O nás</a>
+                    
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ornamentdiv" id="ornamentonBtn2">
+                    <img id="ornament2" src="img/Img circle/pngeggtrikolora.png" alt="">
+                    <div>
+                    <a class="navAelement" id="Reperbtn" href="#">Repertoár</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ornamentdiv" id="ornamentonBtn3">
+                    <img id="ornament3" src="img/Img circle/pngeggFolk8.png" alt="">
+                    <div>
+                        <a class="navAelement" id="Produbtn" href="#">Produkcia</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ornamentdiv" id="ornamentonBtn4">
+                    <img id="ornament4" src="img/Img circle/pngeggtrikolora.png" alt="">
+                    <div class="element" >
+                        <a class="navAelement fullscreen" id="webshbtn" href="#">Eshop</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ornamentdiv" id="ornamentonBtn5">
+                    <img id="ornament5" src="img/Img circle/Ornamnet priehladný.png" alt="">
+                    <div>
+                        <a class="navAelement" id="kontaktbtn" href="#">Kontakt</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-
+        <div id="NavEshop" class="">
+            <div id="VyhladavaciiInputDiv" class="HladajinpCena">
+                <h5>Hľadaj podla ceny</h4>
+                <input type="range" class="range" min="0" max="600" value="600"> <br><output class="OutputCena">600 €</output>
+            </div >
+            <div class="VyhladajInput">
+                <h5>Vyhladaj podla názvu</h5>
+                <input id="SearchCenaMachProd" placeholder="Vyhľadaj..." type="text" name="" value="">
+            </div>
+            <button id="CdSearch_btn" class="CdSearchbtn navEshopBtn">CD</button>
+            <button id="KožaSearch_btn" class="Kozasiearchbtn navEshopBtn">Vyrobky z kože</button>
+            <button id="MuKrojSearch_btn" class="MuzkrojSbtn navEshopBtn">Mužský kroj</button>
+            <button id="ZenKrojSearch_btn" class="zenSerchBtn navEshopBtn">Ženský kroj</button>
+            <button id="kosik_btn" class="košík_a KoiskNim">
+                <p id="Kosik_pocet_item" >0</p>
+                <img src="img/Icona košíka.png" alt="icona_kosika">
+            </button>
+        </div>
     </Header>
+    <div id="PodVedeieDiv"></div>
+    <div class="CloseVedenieBtn">
+         <div>
+            <img id="foto_Pod_Zavri_kosik_div" class="img-fluid" src="img/Img circle/pngegg4.png" alt="mpg4">
+        </div>
+        <div id="closevedenie">X</div>
+    </div>
+    </div>
+    <div class="Vedenie">
+        <div>
+            <h1>Umelecké Vedenie</h1>
+            <div>
+                <img src="img/Vedenie/IgorProgil.jpg" class="img fluid" alt="">
+            </div>
+        </div>
+        <div class="IgorLitva">
+            <h4>Riaditeľ a choreograf </h4>
+            <p>Igor Littva</p>
+        </div>
+        <div class="Vedenie_zložiek">
+            <div>
+                <div>
+                    <p>Organizačná vedúca speváckej zložky</p>
+                    <p>Mária Babicová</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Umelecká vedúca speváckej zložky</p>
+                    <p>Zora Dubovcová</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Vedúci ľudovej hudby</p>
+                    <p>Martin Lipták</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
+        <div id="orgdiv">
+            <div id="NadpisOrg" >Vedenie</div>
+            <div id="slide" >
+               <img class="img-fluid slideshow" src="img/Vedenie/Igor vyrocie.jpg" alt=""> 
+               <img class="img-fluid slideshow" src="img/Vedenie/Martin Liptak.jpg" alt=""> 
+               <img class="img-fluid slideshow" src="img/Vedenie/Marek Chilla.jpg" alt=""> 
+               <!-- <img class="img-fluid slideshow" src="img/Vedenie/Zorka.jpg" alt="">  -->
+            </div>
+        </div>
+        <div id="oceniadiv" >
+            <div id="NadpiOcen">Ocenenia</div>
+            <img class="img-fluid" src="img/Ocenenia/stiahnuť.jpg" alt="">
+        </div>
+        <div id="histdiv" >
+            <div id="NadpiHis">História</div>
+            <div id="Slidehis">
+                <img class="img-fluid slideshowhis" src="img/Historia/1950 Pred sídlom súboru.jpg" alt="">
+                <img class="img-fluid slideshowhis" src="img/Historia/1962 1.predstavenie 8.marec.jpg" alt="">
+                <img class="img-fluid slideshowhis" src="img/Historia/1984 V Sýrii.jpg" alt="">
+                <img class="img-fluid slideshowhis" src="img/Historia/1978 Oviedo - Španielsko (2).jpg" alt="">
+            </div>
+        </div>
+        <div id="clenovia" >
+            <div id="NadpisClen">Členovia</div>
+            <img class="img-fluid slideshowClen" src="img/Clenovia/MEXIKO 2019 (254).jpg" alt="">
+            <img class="img-fluid slideshowClen" src="img/Clenovia/Ja s dievkami.jpg" alt="">
+            <img class="img-fluid slideshowClen" src="img/Clenovia/Muzikanti.jpg" alt="">
+            <!-- <img class="img-fluid slideshowClen" src="img/Clenovia/Mladšie dievky.jpg" alt=""> -->
+            <img class="img-fluid slideshowClen" src="img/Clenovia/Chlapci.jpg" alt="">
+        </div>
+    </main>
+    <div id="UndreDivCloseShop">
+        <div>
+            <img id="foto_Pod_Zavri_kosik_div" class="img-fluid" src="img/Img circle/pngegg4.png" alt="mpg4">
+        </div>
+        <div id="closeEshop">X</div>
+    </div>
+    
+    
+    <img id="DeliaciImg" class="img-fluid DeliaciImgCl" src="img/ornament deliaci tensí.png" alt="">
+    <main id="EshopMainDiv" class="Hlavny-container EshopMainDivAnim">
         
-        
-        tu bude hlavny obsah ako video s volbami 
 
-        pridanie stránok do stránky ako instagram a facebook
+        <!--pokračovanie kódu sa vykresluje z js funkcie GenerateEshop -->
 
-        všetky plagáty do alert message
-
-        keď chce človek odísť tak požiadavka do zapísania sa newslettera o našich nadchádzajúcich aktivitách
 
     </main>
 
-    <footer>
-        toto je footer
-    </footer>
+    <!-- Košík a objednávka -->
+    <div id="Div_pod_kosikSumary" class="Okno_pod_KosikDiv" ></div>
+    <div class="pod_zhrnutie_sumyDiv" >
+        <div id="zhrnutie_ceny">
+            <div >
+                <button onclick="VyprazniKosik()" id="Clear_btn">Vyprázni košík</button>
+                <p>Počet produktov spolu:</p>
+                <div id="pocet_all_item">0</div>
+                <p>Celková cena spolu:</p>
+                <div id="Cena_spolu">0</div>
+            </div>
+        </div>
+        <button id="K_objednavke_btn">K objednávke</button>
+    </div>
+    <div class="Kosik_okno" >
+        <div>
+            <div id="Pod_Zavri_kosik_div">
+                <img id="foto_Pod_Zavri_kosik_div" class="img-fluid" src="img/Img circle/pngegg4.png" alt="mpg4">
+            </div>
+            <div id="Zavri_kosik" >X</div>
+        </div>
+        
+        <div id="Div_pre_itemi"></div> 
+        
+        <!--pokračovanie kódu sa vykresluje z js funkcie Generatekosik -->
 
-    <script src="js.js" ></script>
+    </div>
+    <!-- Formulár v objednávke -->
+    <div id="Pod_folmular">
+        <h2>Dodacie údaje</h2>
+        <form name="Formulár">
+            <label for="Meno">Meno:</label><br>
+            <input class="In" type="text" id="Meno" name="Meno" value="" required><br>
+            <label for="Priezvisko">Priezvisko:</label><br>
+            <input class="In" type="text" id="Priezvisko" name="Priezvisko" value="" required><br>
+            <label for="Ulica">Ulica:</label><br>
+            <input class="In" type="text" id="Ulica" name="Ulica" value=""  required><br>
+            <label for="Mesto">Mesto:</label><br>
+            <input class="In" type="text" id="Mesto" name="Mesto" value=""  required><br>
+            <label for="PSČ">PSČ :</label><br>
+            <input class="In" type="text" id="PSČ" name="PSČ" value=""  required><br>
+            <label for="Telefón">Telefón :</label><br>
+            <input class="In" type="text" id="Telefón" name="Telefón" value=""  required><br>
+            <label for="Kontaktný email">Kontaktný email :</label><br>
+            <input class="In" type="text" id="Kontaktný_email" name="Kontaktný_email" value=""  required><br><br>
+            <label for="Spôsob dopravy">Spôsob doručenia</label><br>
+            <select name="Spôsob dopravy" id="Spôsob_doručenia" form="Formulár"><br>
+                <option value="Osobný odber">Osobný odber</option>
+                <option value="Na poštu">Na poštu (na dobierku)</option>
+                <option value="Kuriér: pošta">Kuriér: pošta (na dobierku)</option>
+                <option value="DHL">DHL (na dobierku)</option>
+            </select><br><br><br>
+
+            <button id="spat_btn" >Späť</button>
+            <button id="Submit_Form_btn" >Dalej</button>
+        </form> 
+    </div>
+    <!-- Zhrnutie k objednávke -->
+    <div id="Zhrnutie">
+        <div id="asdasd">
+            <div id="Zhr_Zakaznika"> 
+                <div id="ZInfo"><p>Meno:&nbsp;&nbsp; Dominik </p>
+                    <p>Priezvisko:&nbsp;&nbsp; Fínik</p>
+                    <p>Adresa: <br> &nbsp; &nbsp;Bystrická cesta 198/54 <br>&nbsp; &nbsp; Ružomerok <br>&nbsp; &nbsp; 03401</p>
+                    <p>Telefón:&nbsp; &nbsp;   0949 215 865</p>
+                    <p>email: &nbsp; &nbsp;  Konosdf@jdf.com</p>
+                </div>
+            </div>
+            <p id="Nadpis_sum_koska">V košíku:</p> 
+            <div id="V_Kosiku">
+               <p id="id_produktu_">(názov vyrobku) ks  (cena za kus) cena spolu</p>
+            </div>
+        </div>
+        
+        <div id="SumarumCena">
+            <p>Cena spolu:</p>
+            <p id="Sumary_cena_all"></p>
+        </div>
+        <div id="btns">
+            <button id="Spať">Späť</button>
+            <button id="Z_objednať">Záväzne objednať</button>
+        </div>
+       
+    </div>
+
+    
+    <script src="dataProducts.js"></script>
+    <script src="Eshop.js" ></script>
+    <script src="script.js" ></script>
 </body>
 </html>

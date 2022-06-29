@@ -4,6 +4,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body > video {
     position: absolute;
@@ -12,65 +13,371 @@ body > video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}   
+}
+#StopClikOnMenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 9999999;
+}
 /* @media (max-width: 764px) */
 header {
     /* background-color: green; */
+    display: flex;
+    height: 250px;
     z-index: 999;
 
 }
-/* @media (max-width: 200px) {
-    #logoFSLiptov {
-        border-radius: 20px;
-        width: 100px;
-        z-index: 999;
+.ornamentdiv {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.ornamentdiv > img {
+    position: absolute;
+    display: inline;
+    top: 100%;
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px; /* Half the height */
+    margin-left: -100px; /* Half the width */
+}
+#ornamentonBtn > img {
+    animation: tociaciOrnamet 5s infinite linear;
+}
+@keyframes tociaciOrnamet {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-@media (max-width: 500px) {
-    #logoliptacik {
-        display: none;
+#ornamentonBtn2 > img {
+    animation: tociaciOrnamet2 6s infinite linear;
+}
+@keyframes tociaciOrnamet2 {
+    0%{
+        transform: translate(-50%, -50%) rotate(360deg);
     }
-} */
-/* @media (max-width: 500px) {
-    #loga {
-        width: 150px;
-        margin: auto;
-        z-index: 999;
-        border-radius: 20px;
-        background-color: black;
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-} */
+}
+#ornamentonBtn3 > img {
+    animation: tociaciOrnamet2 8s infinite linear;
+}
+@keyframes tociaciOrnamet3 {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+#ornamentonBtn4 > img {
+    animation: tociaciOrnamet4 8s infinite linear;
+}
+@keyframes tociaciOrnamet4 {
+    0%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+#ornamentonBtn5 > img {
+    animation: tociaciOrnamet5 6s infinite linear;
+}
+@keyframes tociaciOrnamet5 {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes tociaciOrnamet5 {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.navAelement {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white;
+    border-radius: 60px;
+    padding-top: 18%;
+    text-decoration: none;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+}
 #loga {
-    width: 200px;
-    margin: auto;
-    z-index: 999;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 9999;
+    background-color: white;
+    width: 265px;
+    height: 316px;
+    border-bottom-right-radius: 183px 143px;
 }
 #logoliptov {
-    border-collapse: separate; 
-    border: 5px solid blue;
-    border-radius: 60px;
+    border-radius: 20px;
+    max-width: 234px;
+    z-index: 9999;
 }
-/* #logoSZUS {
-    float: left;
-} */
-nav {
-    background-color: rgb(73, 107, 4);
-    text-align: center;
+nav {                     /* animácie nav menu  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     z-index: 999;
+    animation: mymove 5s cubic-bezier(0.87, 0.01, 0, 1);
+    animation-iteration-count: 1;
 }
-@media (min-width: 180px) {
-    nav {
-        background-color: yellowgreen;
-    }
+@keyframes mymove {
+    0% {transform: translateX(100%); }
+    100% {transform: translateX(0); }
 }
-main {
-    background-color: antiquewhite;
+/* .NavAfterfrststart {
 
+} */
+nav > a {
+    margin: 20px;
+    background: #333;
+    padding: 30px;
+    /* pointer-events: none; */
+    /* cursor: default; */
 }
+#orgdiv {
+    display: none;
+    width: 515px;
+    height: 242px;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 333px;
+    left: 350px;
+    border: 2px solid blue;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 12px 12px 12px rgb(15, 13, 13);
+    cursor: pointer;
+}
+#NadpisOrg {
+    position: absolute;
+    background-color: rgb(43, 57, 207);
+    font-size: 30px;
+    width: fit-content;
+    z-index: 999;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 9px 9px 9px rgb(15, 13, 13);
+}
+#orgdiv > img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+#orgdiv > #slide {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+}
+#oceniadiv {
+    display: none;
+    width: 515px;
+    height: 242px;
+    border-radius: 50px;
+    border: 2px solid blue;
+    overflow: hidden;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 331px;
+    left: 1000px;
+    box-shadow: 12px 12px 12px rgb(15, 13, 13);
+    cursor: pointer;
+}
+#NadpiOcen {
+    position: absolute;
+    background-color: rgb(43, 57, 207);
+    font-size: 30px;
+    width: fit-content;
+    z-index: 999;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 9px 9px 9px rgb(15, 13, 13);
+}
+#histdiv {
+    display: none;
+    width: 515px;
+    height: 242px;
+    border-radius: 50px;
+    border: 2px solid blue;
+    overflow: hidden;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    bottom: 105px;
+    left: 1000px;
+    box-shadow: 12px 12px 12px rgb(15, 13, 13);
+    cursor: pointer;
+}
+#NadpiHis {
+    position: absolute;
+    background-color: rgb(43, 57, 207);
+    font-size: 30px;
+    width: fit-content;
+    z-index: 999;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 9px 9px 9px rgb(15, 13, 13);
+}
+.Slidehis {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+}
+#clenovia {
+    display: none;
+    width: 515px;
+    height: 242px;
+    border-radius: 50px;
+    border: 2px solid blue;
+    overflow: hidden;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    left: 350px;
+    bottom: 100px;
+    box-shadow: 12px 12px 12px rgb(15, 13, 13);
+    cursor: pointer;
+}
+#NadpisClen {
+    position: absolute;
+    background-color: rgb(43, 57, 207);
+    font-size: 30px;
+    width: fit-content;
+    z-index: 999;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 9px 9px 9px rgb(15, 13, 13);
+}
+/* main {
+    background-color: antiquewhite;
+    overflow: hidden;
+
+} */
 footer {
     background-color: blue;
     position: absolute;
     width: 100%;
     bottom: 0px;
     z-index: 999;
+}
+#PodVedeieDiv {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 80%;
+    z-index: 99999999;
+}
+.CloseVedenieBtn {
+    display: none;
+    z-index: 999999999;
+}
+#closevedenie {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 138px;
+    height: 108px;
+    /* background-color: #85081d; */
+    border-bottom-left-radius: 100px;
+    padding-left: 87px;
+    padding-top: 13px;
+    z-index: 99999;
+    font-size: 39px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    z-index: 99999999;
+}
+.Vedenie {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    z-index: 999999999;
+    background-color: bisque;
+    color: black;
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 30px;
+
+}
+.Vedenie > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Vedenie > div > div > img {
+    width: 200px;
+    height: auto;
+    border-radius: 70px;
+}
+.Vedenie > div > h1 {
+    width: 100%;
+    text-align: center;
+}
+.Vedenie_zložiek {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    
+}
+.Vedenie_zložiek > div > div > p {
+    
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+.Vedenie_zložiek > div > div > p:nth-child(2) {
+font-weight: bold;
+}
+.IgorLitva {
+    text-align: center;
+}
+.IgorLitva > p {
+font-size: 33px;
+font-weight: bold;
 }
