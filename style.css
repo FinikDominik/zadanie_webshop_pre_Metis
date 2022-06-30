@@ -166,8 +166,6 @@ nav > a {
     display: none;
     width: 515px;
     height: 242px;
-    background-color: green;
-    position: absolute;
     z-index: 999;
     color: white;
     top: 333px;
@@ -186,6 +184,7 @@ nav > a {
     z-index: 999;
     padding-left: 30px;
     padding-right: 10px;
+    border-top-left-radius: 50px 42px;
     border-bottom-right-radius: 10px;
     box-shadow: 9px 9px 9px rgb(15, 13, 13);
 }
@@ -206,8 +205,6 @@ nav > a {
     border-radius: 50px;
     border: 2px solid blue;
     overflow: hidden;
-    background-color: green;
-    position: absolute;
     z-index: 999;
     color: white;
     top: 331px;
@@ -223,6 +220,7 @@ nav > a {
     z-index: 999;
     padding-left: 30px;
     padding-right: 10px;
+    border-top-left-radius: 50px 42px;
     border-bottom-right-radius: 10px;
     box-shadow: 9px 9px 9px rgb(15, 13, 13);
 }
@@ -233,8 +231,6 @@ nav > a {
     border-radius: 50px;
     border: 2px solid blue;
     overflow: hidden;
-    background-color: green;
-    position: absolute;
     z-index: 999;
     color: white;
     bottom: 105px;
@@ -250,6 +246,7 @@ nav > a {
     z-index: 999;
     padding-left: 30px;
     padding-right: 10px;
+    border-top-left-radius: 50px 42px;
     border-bottom-right-radius: 10px;
     box-shadow: 9px 9px 9px rgb(15, 13, 13);
 }
@@ -265,8 +262,6 @@ nav > a {
     border-radius: 50px;
     border: 2px solid blue;
     overflow: hidden;
-    background-color: green;
-    position: absolute;
     z-index: 999;
     color: white;
     left: 350px;
@@ -282,14 +277,26 @@ nav > a {
     z-index: 999;
     padding-left: 30px;
     padding-right: 10px;
+    border-top-left-radius: 50px 42px;
     border-bottom-right-radius: 10px;
     box-shadow: 9px 9px 9px rgb(15, 13, 13);
 }
-/* main {
-    background-color: antiquewhite;
-    overflow: hidden;
+#El_ONas {
+    display: grid;
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    gap: 2.9rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    z-index: 99999;
 
-} */
+}
+.El_ONas_DivFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 footer {
     background-color: blue;
     position: absolute;

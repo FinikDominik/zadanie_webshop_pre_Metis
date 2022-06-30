@@ -12,24 +12,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Eshop.css">
-    
-    
     <title>Fs Liptov - projekt</title>
 </head>
 <body>
-
-    <video id="covervideo" class="" src="Cover video.mp4" muted loop autoplay ></video>
-
+    <video id="covervideo" class="" src="cover video skratene.mp4" muted loop autoplay ></video>
     <div id="StopClikOnMenu"></div>
     <Header>
         <div id="loga"> 
             <img id="logoliptov" class="img-fluid" src="Logo 75.png" alt="logoFSLiptov">
-            <!-- <img id="logoliptacik" class="img-fluid " src="logo liptacik.png" alt="logoFSLiptacik"> -->
-            <!-- <img id="logoSZUS" class="img-fluid " src="logo zus.png" alt="logosZUS"> -->
-
         </div>
-        
-        
         <nav id="NavMenu" class="">
             <div>
                 <div class="ornamentdiv" id="ornamentonBtn">
@@ -132,55 +123,51 @@
             </div>
         </div>
     </div>
-    <main>
-        <div id="orgdiv">
-            <div id="NadpisOrg" >Vedenie</div>
-            <div id="slide" >
-               <img class="img-fluid slideshow" src="img/Vedenie/Igor vyrocie.jpg" alt=""> 
-               <img class="img-fluid slideshow" src="img/Vedenie/Martin Liptak.jpg" alt=""> 
-               <img class="img-fluid slideshow" src="img/Vedenie/Marek Chilla.jpg" alt=""> 
-               <!-- <img class="img-fluid slideshow" src="img/Vedenie/Zorka.jpg" alt="">  -->
+    <div class="El_ONas_DivFlex">
+        <main id="El_ONas">
+            <div id="orgdiv">
+                <div id="NadpisOrg" >Vedenie</div>
+                <div id="slide" >
+                   <img class="img-fluid slideshow" src="img/Vedenie/Igor vyrocie.jpg" alt=""> 
+                   <img class="img-fluid slideshow" src="img/Vedenie/Martin Liptak.jpg" alt=""> 
+                   <img class="img-fluid slideshow" src="img/Vedenie/Marek Chilla.jpg" alt=""> 
+                   <!-- <img class="img-fluid slideshow" src="img/Vedenie/Zorka.jpg" alt="">  -->
+                </div>
             </div>
-        </div>
-        <div id="oceniadiv" >
-            <div id="NadpiOcen">Ocenenia</div>
-            <img class="img-fluid" src="img/Ocenenia/stiahnuť.jpg" alt="">
-        </div>
-        <div id="histdiv" >
-            <div id="NadpiHis">História</div>
-            <div id="Slidehis">
-                <img class="img-fluid slideshowhis" src="img/Historia/1950 Pred sídlom súboru.jpg" alt="">
-                <img class="img-fluid slideshowhis" src="img/Historia/1962 1.predstavenie 8.marec.jpg" alt="">
-                <img class="img-fluid slideshowhis" src="img/Historia/1984 V Sýrii.jpg" alt="">
-                <img class="img-fluid slideshowhis" src="img/Historia/1978 Oviedo - Španielsko (2).jpg" alt="">
+            <div id="oceniadiv" >
+                <div id="NadpiOcen">Ocenenia</div>
+                <img class="img-fluid" src="img/Ocenenia/stiahnuť.jpg" alt="">
             </div>
-        </div>
-        <div id="clenovia" >
-            <div id="NadpisClen">Členovia</div>
-            <img class="img-fluid slideshowClen" src="img/Clenovia/MEXIKO 2019 (254).jpg" alt="">
-            <img class="img-fluid slideshowClen" src="img/Clenovia/Ja s dievkami.jpg" alt="">
-            <img class="img-fluid slideshowClen" src="img/Clenovia/Muzikanti.jpg" alt="">
-            <!-- <img class="img-fluid slideshowClen" src="img/Clenovia/Mladšie dievky.jpg" alt=""> -->
-            <img class="img-fluid slideshowClen" src="img/Clenovia/Chlapci.jpg" alt="">
-        </div>
-    </main>
+            <div id="clenovia" >
+                <div id="NadpisClen">Členovia</div>
+                <img class="img-fluid slideshowClen" src="img/Clenovia/MEXIKO 2019 (254).jpg" alt="">
+                <img class="img-fluid slideshowClen" src="img/Clenovia/Ja s dievkami.jpg" alt="">
+                <img class="img-fluid slideshowClen" src="img/Clenovia/Muzikanti.jpg" alt="">
+                <!-- <img class="img-fluid slideshowClen" src="img/Clenovia/Mladšie dievky.jpg" alt=""> -->
+                <img class="img-fluid slideshowClen" src="img/Clenovia/Chlapci.jpg" alt="">
+            </div>
+            <div id="histdiv" >
+                <div id="NadpiHis">História</div>
+                <div id="Slidehis">
+                    <img class="img-fluid slideshowhis" src="img/Historia/1950 Pred sídlom súboru.jpg" alt="">
+                    <img class="img-fluid slideshowhis" src="img/Historia/1962 1.predstavenie 8.marec.jpg" alt="">
+                    <img class="img-fluid slideshowhis" src="img/Historia/1984 V Sýrii.jpg" alt="">
+                    <img class="img-fluid slideshowhis" src="img/Historia/1978 Oviedo - Španielsko (2).jpg" alt="">
+                </div>
+            </div>
+        </main>
+    </div>
+    
     <div id="UndreDivCloseShop">
         <div>
             <img id="foto_Pod_Zavri_kosik_div" class="img-fluid" src="img/Img circle/pngegg4.png" alt="mpg4">
         </div>
         <div id="closeEshop">X</div>
     </div>
-    
-    
     <img id="DeliaciImg" class="img-fluid DeliaciImgCl" src="img/ornament deliaci tensí.png" alt="">
     <main id="EshopMainDiv" class="Hlavny-container EshopMainDivAnim">
-        
-
         <!--pokračovanie kódu sa vykresluje z js funkcie GenerateEshop -->
-
-
     </main>
-
     <!-- Košík a objednávka -->
     <div id="Div_pod_kosikSumary" class="Okno_pod_KosikDiv" ></div>
     <div class="pod_zhrnutie_sumyDiv" >
@@ -202,11 +189,8 @@
             </div>
             <div id="Zavri_kosik" >X</div>
         </div>
-        
         <div id="Div_pre_itemi"></div> 
-        
         <!--pokračovanie kódu sa vykresluje z js funkcie Generatekosik -->
-
     </div>
     <!-- Formulár v objednávke -->
     <div id="Pod_folmular">
@@ -233,7 +217,6 @@
                 <option value="Kuriér: pošta">Kuriér: pošta (na dobierku)</option>
                 <option value="DHL">DHL (na dobierku)</option>
             </select><br><br><br>
-
             <button id="spat_btn" >Späť</button>
             <button id="Submit_Form_btn" >Dalej</button>
         </form> 
@@ -254,7 +237,6 @@
                <p id="id_produktu_">(názov vyrobku) ks  (cena za kus) cena spolu</p>
             </div>
         </div>
-        
         <div id="SumarumCena">
             <p>Cena spolu:</p>
             <p id="Sumary_cena_all"></p>
@@ -263,10 +245,7 @@
             <button id="Spať">Späť</button>
             <button id="Z_objednať">Záväzne objednať</button>
         </div>
-       
     </div>
-
-    
     <script src="dataProducts.js"></script>
     <script src="Eshop.js" ></script>
     <script src="script.js" ></script>
