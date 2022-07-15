@@ -186,7 +186,7 @@ let ProduktData = [
       "trieda": "Ženský kroj",
       "Nazov": "Košela 2",
       "cena": "130",
-      "img": "img/Žensky kroj/Košela 2.png"
+      "img": "https://lh3.googleusercontent.com/MJDCVntAEMH6GCAH9djUw5z6R0wx42jA7LCAlgB1YIaaVu7eCW-srpndpQ7HSOEXJPN4PUPRKdsXUnCG7bpDYhFSyE7YzhVzWCTSolOsXYf66OrbjYdicbuDa7p6yhQpCE-WfxUB3x0RD7_s1oVshCb2mSQT_ZedrVxTYw2mtsu7-x93tgMYfzoZ0D0YxV3n83FcduVR8hbWkC-NHzYnJ2-kDTXqXoMJa77WSFftPzTUK9IIgCmduD-pskduKOJipv1G36F7bROkiyH3yEiQfOblEjPDpiV80KRnYSnDiN8lkZcvB59shAuAXx_1XwQB651nzejG2ks_6g04W5ecUkWqysrzWMmHDtQ3LXS7xuHxscurpMcytJW-agCwRb3J05ReqrBMpx2sU1OthjjoB0AANNx51Nk40QetBAyGpSvOcA-fCu8WOU91gi_v-9XYFSYoq0icS2FCmw7QJ3Glmi_9_VUDGhmONz5MNUFtgIcgdGMam3lnDYJbXV1ZDW6Q-zlhqpLL1kUXoMbZ6FRdu65VyOl3x6ZSgGT46Ye432MeHOBpxbEfBNLJ5jeQXJu17dOMZhdvznpPkjNL4iegRQnobOXSfBn_EjyH0ooD9L7bQIjVK7lOIUm1jFgW9V_P2BVW5JnlJi4FrmDZvjvTgy3tTOlwKcP9kWf_rkwC1oXeE9CQ20PAgPRcsQtbA8qW2KtqLwDTNoHkqWzuVOVV4APTMI2OA6M0J9CHjYfrizB7YaoK9-RJ3X6aImQpvljvHQ-wqj-lx-3DSI2-pFcvo9YKz4vYa6yMXqCakrqncMLqdy1NnYJ2YA8-F5GaPf0e8B4=w487-h466-no?authuser=0"
     },
     {
       "id": 28,
